@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+    <com.cch.scrollviewhelper.MyScrollView
+        android:id="@+id/sv_main"
+        app:setAnchorViewHeight="5000dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/anchor"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="#000000">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_test"
+                    android:padding="8dp"
+                    android:background="#00FF00"
+                    android:layout_centerInParent="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp">
+                </android.support.v4.view.ViewPager>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="111111111111111111111111111111111111111111111111111111122222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111122222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111122222222222222222222222222222222222222222222222222222222222222111111111111111111111111111111111111111111111111111111122222222222222222222222222222222222222222222222222222222222222"
+                android:textSize="50sp"/>
+        </LinearLayout>
+    </com.cch.scrollviewhelper.MyScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#FF0000"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_title_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:text="标题标题"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按钮"/>
+    </LinearLayout>
+</RelativeLayout>
